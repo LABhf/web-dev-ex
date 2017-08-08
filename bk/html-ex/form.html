@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<form>
+
+	<input type="text" placeholder="User">
+	<input type="password" placeholder="password">
+	<p><input type="Submit"></p>
+
+</form>
+Notar que se o atributo name for usado os inputs vão parar no url, ou seja o dado escrito nos "forms" saem para serem enviados para outro lugar...
+<p>
+	
+</p>
+<form>
+
+	<input type="text" placeholder="User" name="user">
+	<input type="password" placeholder="password" name="password">
+	<p><input type="Submit"></p>
+
+</form>
+Notar agora se eu enviar o dado usando  form action= , eu envio o dado e o request aparece no site
+<form action="http://luiggiab.wordpress.com/">
+
+	<input type="text" placeholder="User" name="user">
+	<input type="password" placeholder="password" name="password">
+	<p><input type="Submit"></p>
+</form>
+Agora tudo isso com label tag junto
+<!-- <p>
+	
+</p>
+
+<form action="http://luiggiab.wordpress.com/">
+
+<label>User:
+<input type="text" placeholder="User" name="user">
+</label>
+
+<label>Password:
+<input type="password" placeholder="password" name="password">
+</label>
+
+<p></p>
+<label><input type="Submit"></label>
+</form>
+
+<p></p> -->
+<!-- ############################   OU ASSIM -->
+
+<form action="http://luiggiab.wordpress.com/">
+
+<label for="username">User:</label>
+<input id="username" type="text" placeholder="User" name="user">
+<!-- Conectei eles,label e input, com o for e o id -->
+
+<label for="password">Password:</label>
+<input id="password" type="password" placeholder="Password" name="password">
+
+<p></p>
+<input type="Submit">
+
+</form>
+
+------------------------
+<!-- notar a diferença no botao refresh usando e nõ usando o elemento -->
+<p></p>
+<!-- 
+Action where the form send data to
+
+Method what HTTP method (get/post) 
+-->
+
+<!-- Demostração de form com Action e Method -->
+
+<form action="http://luiggiab.wordpress.com/" method="get">
+		<!-- notar que nesse caso https n funciona só http -->
+	<button>Teste 1</button>
+</form>
+ 
+ <p>
+ 	<a href="https://luiggiab.wordpress.com/">Teste 2</a>
+ </p>
+ 
+
+
+</body>
+</html>

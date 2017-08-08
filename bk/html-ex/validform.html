@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>valid form</title>
+</head>
+<body>
+
+	<form action="http://luiggiab.wordpress.com/">
+		<p>para obrigar o usuario a preencher um formulario podemos adicionar o atributo required no input</p> 
+		<label for="username">User:</label>
+		<input id="username" type="text" placeholder="User" name="user" required>
+ 		
+
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="Password" name="password" required=>
+		<input type="Submit">
+
+	</form>
+agora validação para email
+
+	<form action="http://luiggiab.wordpress.com/">
+		<p>para obrigar o usuario a preencher email é só mudar o type para email</p> 
+		<label for="username">Email:</label>
+		<input id="username" type="email" placeholder="username" required>
+ 		
+
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="Password" required=>
+		<input type="Submit">
+
+	</form>
+
+---
+<p></p>
+<input type="radio">
+<p></p>
+<input type="checkbox">
+<p></p>
+exemplo, vc gosta mais de batata ou de estuda?
+<p></p>
+
+<form action="http://luiggiab.wordpress.com/">
+
+<label for="estudar">Estudar: </label>
+<input id="estudar" type="radio" name="escolha" value="estudar"><p></p>
+
+<label for="batata">Batata</label>
+<input id="batata" type="radio" name="escolha" value="batata"><p></p>
+
+<label for="estuda&batata">Eu gosto mais de batata e gosto mais de estuda tbm</label>
+<input id="estuda&batata" type="radio" name="escolha" value="estuda&batata"><p></p>
+ 
+<select name="cor">
+	<option>vermelho</option>
+	<option>preto</option>
+	<option>branco</option>
+</select>
+<p></p>
+ <p>exemplo com valores diferentes do option, nesse caso humor</p>
+<select name="humor">
+	<option value="feliz">:)</option>
+	<option value="neutro">:|</option>
+	<option value="triste">:(</option>
+</select>
+<p></p>
+area de texto, diferente de texto que fica tudo em uma linha só ...<p></p>
+<textarea rows="10" cols="10" name="paragrafo"></textarea><p></p>
+
+<button> Mandar! </button>
+
+</form>
+ 
+<p>----</p>
+dando o mesmo "name" a escolha fica exclusiva, n bodemos escolher ambos
+<p>se o "button" estiver no form envia </p>
+dar o atributo valor no "input" vai mandar o valor escolhido
+
+
+
+</body>
+</html>
